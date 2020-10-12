@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BookShelf</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="script\app.js" defer type="module"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style\app.css" />
+  </head>
+  <body>
+    <div id="backdrop"></div>
+
+    <div class="reading column" id="readingContent">
+      <div class="mt-2 col-md-1"></div>
+      <div class="reading__actions">
+        <div class="row row-cols-3" align="center">
+          <div class="col" align="left">
+            <button class="btn btn--back" id="backBtn">Back</button>
+          </div>
+          <div class="col">
+            <button class="btn btn--close" id="closeBtn">Close</button>
+          </div>
+          <div class="col" align="right">
+            <button class="btn btn--next" id="nextBtn">Next</button>
+          </div>
+        </div>
+        <div class="reading__content">
+          <div class="mt-3 col-md-1"></div>
+          <div class="container">
+            <p id="bookId"></p>
+            <p id="pageNumber"></p>
+            <p id="bookPage-content"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-light" style="background-color: #d3ebfd;">
+      <a class="navbar-brand" href="mainHtml.html">
+        <img
+          src="style\brandLogo2.png"
+          width="35"
+          height="35"
+          class="d-inline-block align-top"
+          alt="brokenImage.png"
+          loading="lazy"
+        />
+        BookShelf
+      </a>
+    </nav>
+    <div class="mt-5 col-md-1"></div>
+    <div class="row row-cols-1" align="center">
+      <div class="mt-5 col-md-1"></div>
+      <div class="container" id="book-shelf">
+        <div class="row row-cols-5" align="center">
+          <div class="col" id="0">
+            <figure class="figure">
+              <img
+                src="style\bookCovers\donQuixote.jpg"
+                width="150"
+                height="200"
+                class="figure-img img-fluid rounded"
+                alt="brokenImage.png"
+              />
+              <figcaption class="figure-caption">Don Quixote</figcaption>
+            </figure>
+          </div>
+          <div class="col" id="1">
+            <figure class="figure">
+              <img
+                src="style\bookCovers\persuasion.jpg"
+                width="150"
+                height="200"
+                class="figure-img img-fluid rounded"
+                alt="brokenImage.png"
+              />
+              <figcaption class="figure-caption">Persuasion</figcaption>
+            </figure>
+          </div>
+          <div class="col" id="2">
+            <figure class="figure">
+              <img
+                src="style\bookCovers\prideAndPrejudice.jpg"
+                width="150"
+                height="200"
+                class="figure-img img-fluid rounded"
+                alt="brokenImage.png"
+              />
+              <figcaption class="figure-caption">
+                Pride And Prejudice
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col" id="3">
+            <figure class="figure">
+              <img
+                src="style\bookCovers\smiles.jpg"
+                width="150"
+                height="200"
+                class="figure-img img-fluid rounded"
+                alt="brokenImage.png"
+              />
+              <figcaption class="figure-caption">'smiles'</figcaption>
+            </figure>
+          </div>
+          <div class="col" id="4">
+            <figure class="figure">
+              <img
+                src="style\bookCovers\theDemonGirl.jpg"
+                width="150"
+                height="200"
+                class="figure-img img-fluid rounded"
+                alt="brokenImage.png"
+              />
+              <figcaption class="figure-caption">The Demon Girl</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="mt-5 col-md-1"></div>
+        <div class="row row-cols-5" align="center">
+          <div class="col" id="5">
+            <figure class="figure">
+              <img
+                src="style\bookCovers\theUnveiling.jpg"
+                width="150"
+                height="200"
+                class="figure-img img-fluid rounded"
+                alt="brokenImage.png"
+              />
+              <figcaption class="figure-caption">The Unveiling</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p align="right">abhinay khalatkar</p>
+  </body>
+</html>
